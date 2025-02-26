@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("Mirror Bot")
+st.set_page_config(page_title="First Chat", page_icon="💬")
+st.title("💬 Hult GPT v1.1 — Mirrorbot")
 
 # Initialize chat history
 if "messages" not in st.session_state:

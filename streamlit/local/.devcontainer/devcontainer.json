@@ -1,0 +1,22 @@
+{
+    "name": "Ollama Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3.10",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "forwardPorts": [8501, 11434],
+    "postCreateCommand": "pip install streamlit requests && chmod +x ./setup-ollama.sh && ./setup-ollama.sh",
+    "postStartCommand": "~/ollama serve &",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.linting.enabled": true,
+                "python.formatting.provider": "black"
+            }
+        }
+    }
+}

@@ -2,7 +2,8 @@ import streamlit as st
 import random
 import time
 
-st.title("Simple chat")
+st.set_page_config(page_title="Simple Chat", page_icon="💬")
+st.title("💬 Hult GPT v1.2 — Simple")
 
 # Streamed response emulator
 def response_generator():
@@ -11,12 +12,13 @@ def response_generator():
             "Hello CM3CS! How can I assist you today?",
             "Hi, Hultians! Is there anything I can help you with?",
             "What's shakin', Hultian?", 
+            "How are you??"
         ]
     )
     # make the respponse seem like typing
     for word in response.split():
         yield word + " "
-        time.sleep(0.05)
+        time.sleep(0.2)
 
 # Initialize chat history
 if "messages" not in st.session_state:
