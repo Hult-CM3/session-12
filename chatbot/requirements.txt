@@ -1,0 +1,3 @@
+transformers
+streamlit
+torch>=3.6
