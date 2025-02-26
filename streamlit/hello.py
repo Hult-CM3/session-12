@@ -6,6 +6,6 @@ st.title("👋 Hello Hult")
 st.write(
     """
     Hello my fellow Hultians!
-    How are you today?
+    How are you this afternoon?
     """
 )

@@ -18,7 +18,7 @@ def response_generator():
     # make the respponse seem like typing
     for word in response.split():
         yield word + " "
-        time.sleep(0.2)
+        time.sleep(0.5)
 
 # Initialize chat history
 if "messages" not in st.session_state:
