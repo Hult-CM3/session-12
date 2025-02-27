@@ -11,6 +11,7 @@ grammar = nltk.CFG.fromstring("""
     V -> "saw" | "walked"
 """)
 
+
 parser = nltk.ChartParser(grammar)
 
 sentence = input("Sentence: ").split()

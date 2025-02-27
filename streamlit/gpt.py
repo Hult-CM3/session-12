@@ -6,8 +6,8 @@ import random
 import logging
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from dotenv import load_dotenv
-load_dotenv()
 
+load_dotenv()
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
